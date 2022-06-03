@@ -26,6 +26,24 @@ body {
           justify-content: center;
 }
 
+.center-content-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center-content-column a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .main {
   width: 100%;
   height: 94vh;
@@ -45,11 +63,11 @@ body {
 }
 
 .main .content-celular img {
-  width: 95vmin;
+  width: 34rem;
 }
 
 .main .content {
-  width: 25vmax;
+  width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,11 +95,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 60px 40px;
 }
 
 .main .content .content-login img {
-  max-width: 90%;
+  padding: 30px 10px;
+  max-width: 70%;
 }
 
 .main .content .content-login form {
@@ -92,6 +110,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 15rem;
 }
 
 .main .content .content-login form input {
@@ -108,14 +127,15 @@ body {
   border-radius: 3px;
 }
 
-.main .content .content-login p {
+.main .content .content-login #p-1-content-login {
   font-size: 18px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main .content .content-login p::before {
+.main .content .content-login #p-1-content-login::before {
   content: "";
   width: 100%;
   height: 1px;
@@ -124,7 +144,7 @@ body {
   margin-right: 10px;
 }
 
-.main .content .content-login p::after {
+.main .content .content-login #p-1-content-login::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -136,6 +156,7 @@ body {
 .main .content .content-login a {
   text-decoration: none;
   font-weight: bold;
+  color: #0095f6;
 }
 
 .main .content .content-cadastrar {
@@ -157,6 +178,8 @@ body {
 
 .main .content .content-cadastrar a {
   text-decoration: none;
+  font-weight: bold;
+  color: #0095f6;
 }
 
 .baixar-app {

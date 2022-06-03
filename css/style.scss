@@ -19,8 +19,22 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
     
 }
+
+.center-content-column{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    a{
+        margin-top: 5px ;
+        margin-bottom: 5px;
+    }
+}
+
+
 .main{
     width: 100%;
     height: 94vh;
@@ -32,13 +46,13 @@ body{
     .content-celular{
         
         img{
-            width: 95vmin;
+            width: 34rem;
         }
     }
 
     .content{
         
-        width: 25vmax;
+        width: 35%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -49,14 +63,16 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 60px 40px;
+            
 
             img{
-                max-width: 90%;
+                padding: 30px 10px;
+                max-width: 70%;
             }
             form{
                 display: flex;
                 flex-direction: column;
+                width: 15rem;
     
                 input{
                     margin: 2px 0;
@@ -72,8 +88,9 @@ body{
                 }
             }
 
-            p{
+            #p-1-content-login{
                 font-size: 18px;
+                width: 100%;
                 display: flex;
 
                 &::before{
@@ -88,7 +105,6 @@ body{
                 &::after{
                     content: "";
                     width: 100%;
-                    
                     height: 1px;
                     background-color: #e5e5e5;
                     margin-top: 6px;
@@ -98,6 +114,7 @@ body{
             a{
                 text-decoration: none;
                 font-weight: bold;
+                color: #0095f6;
             }
         }
     
@@ -112,6 +129,8 @@ body{
            
             a{
                 text-decoration: none;
+                font-weight: bold;
+                color: #0095f6;
             }
            
         }
