@@ -63,11 +63,11 @@ body {
 }
 
 .main .content-celular img {
-  width: 34rem;
+  width: 16rem;
 }
 
 .main .content {
-  width: 35%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,11 +95,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 60%;
 }
 
 .main .content .content-login img {
   padding: 30px 10px;
-  max-width: 70%;
+  max-width: 60%;
 }
 
 .main .content .content-login form {
@@ -115,16 +116,33 @@ body {
 
 .main .content .content-login form input {
   margin: 2px 0;
-  height: 25px;
+  height: 32px;
+}
+
+.main .content .content-login form input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.main .content .content-login form input:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.main .content .content-login form input::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.main .content .content-login form input::placeholder {
+  font-size: 12px;
 }
 
 .main .content .content-login form button {
   margin: 8px 0;
-  height: 22px;
+  height: 30px;
   background-color: #0095f6;
   color: #fff;
   border: none;
   border-radius: 3px;
+  font-weight: bold;
 }
 
 .main .content .content-login #p-1-content-login {
@@ -162,7 +180,7 @@ body {
 .main .content .content-cadastrar {
   border: 1px solid #e5e5e5;
   margin-top: 10px;
-  width: 100%;
+  width: 60%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,6 +201,7 @@ body {
 }
 
 .baixar-app {
+  width: 60%;
   margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,20 +224,32 @@ body {
   margin-bottom: 5px;
 }
 
-.download {
+.baixar-app .download {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
 }
 
-.download img {
-  padding: 5px 0;
-  max-height: 35px;
-  margin-right: 10px;
+.baixar-app .download .app-download {
+  height: 4rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.baixar-app .download .app-download:nth-child(1) {
+  background-image: url(../img/apple.png);
+}
+
+.baixar-app .download .app-download:nth-child(2) {
+  background-image: url(../img/google-play.png);
 }
 
 .footer {
