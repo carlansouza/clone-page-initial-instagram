@@ -62,6 +62,23 @@ body {
           align-items: center;
 }
 
+.main .content-celular {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main .content-celular img {
   width: 16rem;
 }
@@ -235,13 +252,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
 }
 
 .baixar-app .download .app-download {
-  height: 4rem;
+  height: 3rem;
   width: 10rem;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .baixar-app .download .app-download:nth-child(1) {
