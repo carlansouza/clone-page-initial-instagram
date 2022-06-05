@@ -5,6 +5,7 @@
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  text-decoration: none;
 }
 
 body {
@@ -46,7 +47,7 @@ body {
 
 .main {
   width: 100%;
-  height: 94vh;
+  height: 92vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,11 +130,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 15rem;
-}
-
-.main .content .content-login form input {
-  margin: 2px 0;
-  height: 32px;
 }
 
 .main .content .content-login form input::-webkit-input-placeholder {
@@ -282,7 +278,42 @@ body {
           align-items: center;
 }
 
-.footer a {
-  text-decoration: none;
+@media (max-width: 1024px) {
+  .main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .main {
+    width: 100%;
+  }
+  .main .content-celular {
+    display: none;
+  }
+  .main .content {
+    width: 90%;
+  }
+  .main .content .content-login {
+    width: 100%;
+  }
+  .main .content .content-login form {
+    width: 100%;
+  }
+  .main .content .content-cadastrar {
+    width: 100%;
+  }
+  .main .content .baixar-app {
+    width: 100%;
+  }
+  .footer {
+    justify-items: center;
+  }
+  .footer p {
+    font-size: 12px;
+  }
+  .footer a {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
